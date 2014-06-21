@@ -1,0 +1,5 @@
+pkg/
+work/
+Gemfile.lock
+*~
+*.swp

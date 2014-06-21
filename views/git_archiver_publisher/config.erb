@@ -1,0 +1,11 @@
+<%
+f = taglib("/lib/form")
+
+f.entry(:title => 'Output Filename', :field => 'output_filename', :description => "Filename of archive to be created, we'll be placed in a \"git-archive\" directory.") do
+  f.textbox :default => 'archive-$BUILD_NUMBER.zip'
+end
+
+f.entry(:title => 'Tree or Commit', :field => 'commit', :description => "Tree or commit to create archive from, i.e. default is \"HEAD\"") do
+  f.textbox :default => 'HEAD'
+end
+%>
